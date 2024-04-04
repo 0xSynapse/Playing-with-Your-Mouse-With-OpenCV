@@ -1,8 +1,8 @@
 import cv2
 import math
 
-source = cv2.imread("Quiz10_2.jpg", 1)
-source = cv2.resize(source, (620, 480))
+source = cv2.imread("/home/ankan_opencv/officework/indore-talk24-projects/Playing-with-Your-Mouse-With-OpenCV/dog.jpg", 1)
+source = cv2.resize(source, (680, 680))
 # /home/ankan_opencv/
 # Lists to store the points
 center = []
@@ -47,7 +47,6 @@ while k != 27:
         cv2.FONT_HERSHEY_SIMPLEX,
         0.6,
         (255, 255, 255),
-        2,
     )
     k = cv2.waitKey(20) & 0xFF
     # Another way of cloning, key low_c
